@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Active%20Development-yellow?style=flat-square)
 ![Version](https://img.shields.io/badge/Version-0.9-blue?style=flat-square)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-green?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-orange?style=flat-square)
+
 
 ---
 
