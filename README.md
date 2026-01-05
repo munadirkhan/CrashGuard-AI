@@ -360,12 +360,6 @@ See [deploy.md](Documentation/deploy.md) for detailed instructions.
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License**. See LICENSE file for details.
-
----
-
 ## 🙏 Acknowledgments
 
 - **yfinance**: Yahoo Finance data fetching
