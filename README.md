@@ -1,7 +1,7 @@
 # 🚀 CrashGuard AI - Enterprise Market Surveillance Platform
 
-> **Professional-grade pump-and-dump detector + bullish stock predictor**  
-> Real-time anomaly detection, social sentiment analysis, and AI-powered trading signals
+> **Professional grade pump-and-dump detector + bullish stock predictor**  
+> Real time anomaly detection, social sentiment analysis, and AI powered trading signals
 
 ![Status](https://img.shields.io/badge/Status-Active%20Development-yellow?style=flat-square)
 ![Version](https://img.shields.io/badge/Version-0.9-blue?style=flat-square)
@@ -12,11 +12,11 @@
 
 ## 📊 Overview
 
-**CrashGuard AI** is an enterprise-grade market surveillance platform designed to detect fraudulent trading patterns, identify pump-and-dump schemes, and provide AI-powered buy/sell recommendations based on:
+**CrashGuard AI** is an enterprise grade market surveillance platform designed to detect fraudulent trading patterns, identify pump-and-dump schemes, and provide AI powered buy/sell recommendations based on:
 
 - **📈 Technical Analysis**: Candlestick patterns, moving averages, volume anomalies, volatility metrics
-- **📱 Social Sentiment**: Real-time X (Twitter) feeds, Reddit discussions, sentiment scoring
-- **🔍 Anomaly Detection**: ML-powered Isolation Forest algorithm detecting unusual price/volume behavior
+- **📱 Social Sentiment**: Real time X (Twitter) feeds, Reddit discussions, sentiment scoring
+- **🔍 Anomaly Detection**: ML powered Isolation Forest algorithm detecting unusual price/volume behavior
 - **⚠️ Crash Detection**: Historical analysis flagging stocks that crashed >70% with visual warnings
 - **💡 AI Signals**: Composite scoring engine combining technical + social + momentum indicators
 - **📊 Backtesting**: Historical strategy validation with Sharpe ratio, max drawdown, win rate metrics
@@ -28,23 +28,23 @@
 ## ✨ Key Features
 
 ### 🎯 Real-Time Market Intelligence
-- **Live Price Monitoring**: Current price, 52-week high/low, market cap, volume ratios
+- **Live Price Monitoring**: Current price, 52 week high/low, market cap, volume ratios
 - **Stock Search**: Search any publicly traded symbol with instant data retrieval
-- **Professional Dashboard**: Dark-themed MIT-level UI with cyan accents and metric cards
+- **Professional Dashboard**: Dark-themed UI with cyan accents and metric cards
 
 ### 🔴 Crash & Anomaly Detection
 - **Historical Crash Warnings**: Flags stocks that lost >70% of value with peak/trough analysis
-- **Real-time Anomalies**: Detects unusual price jumps (>10%), volume spikes (>3x), gaps (>5%), volatility shifts
+- **Real time Anomalies**: Detects unusual price jumps (>10%), volume spikes (>3x), gaps (>5%), volatility shifts
 - **Visual Highlighting**: Annotated candlestick charts showing crash periods, peaks, and anomaly points
 - **Severity Scoring**: Risk stratification (HIGH/MEDIUM/LOW alerts)
 
-### 📱 Multi-Source Social Analysis
+### 📱 Multi Source Social Analysis
 - **X/Twitter Integration**: Connects to 8 target accounts (@unusual_whales, @deltaone, @StockMKTNewz, etc.)
 - **Reddit Monitoring**: 9 target communities (r/wallstreetbets, r/pennystocks, r/stocks, etc.)
-- **Sentiment Scoring**: VADER-based compound sentiment (-1 to +1) on all posts
+- **Sentiment Scoring**: VADER based compound sentiment (-1 to +1) on all posts
 - **Hype Metrics**: Mention volume, engagement rate, author diversity, positive bias tracking
 
-### 🤖 AI-Powered Trading Signals
+### 🤖 AI Powered Trading Signals
 - **Composite Scoring**: BUY/HOLD/SELL recommendations with confidence % (0-100%)
 - **Bullish Candidates**: Ranks stocks by: hype (35%) + sentiment (25%) + momentum (15%) + price (15%) + volume (10%)
 - **Backtesting Engine**: Test strategies on historical data; calculate returns, Sharpe ratio, max drawdown, win rate
@@ -64,7 +64,7 @@
 | **Frontend** | Streamlit 1.52.2 | Web dashboard UI |
 | **Data Collection** | yfinance 1.0 | Stock price & company data |
 | **Social APIs** | Tweepy 4.14, PRAW (pending) | X/Twitter & Reddit feeds |
-| **ML/Analytics** | scikit-learn 1.8, pandas 2.3 | Anomaly detection, predictions |
+| **ML/Analytics** | scikit learn 1.8, pandas 2.3 | Anomaly detection, predictions |
 | **Visualization** | Plotly 6.5 | Interactive candlestick charts |
 | **Sentiment** | VADER (nltk 3.8) | Social post sentiment analysis |
 | **Database** | SQLite | Historical data persistence |
@@ -141,7 +141,7 @@ Dashboard will open at: **http://localhost:8505**
 Search → "OST" or "PHH" → 🔴 CRASH BANNER appears with 70%+ warning
 ```
 
-**2. Check Real-Time Social Sentiment**
+**2. Check Real Time Social Sentiment**
 ```
 Tab: "Social Feed" → See latest X posts from monitored accounts + sentiment
 ```
@@ -190,16 +190,16 @@ CrashGuard-AI/
 
 ### 1️⃣ **Anomaly Detector** (`anomaly_detector.py`)
 Detects suspicious trading patterns using:
-- **Rule-based checks**: Price jumps >10%, volume >3x, gaps >5%, volatility spikes
+- **Rule based checks**: Price jumps >10%, volume >3x, gaps >5%, volatility spikes
 - **ML (Isolation Forest)**: Unsupervised learning on normalized OHLCV features
 - **Output**: Severity score (0-100), alert type (pump/dump/volatility), date
 
 ### 2️⃣ **Social Data Fetcher** (`social_data_fetcher.py`)
-Real-time social signal collection:
+Real time social signal collection:
 - **X/Twitter v2 API**: Searches tweets from 8 target accounts using symbol filters
 - **Reddit PRAW**: Searches 9 target subreddits for discussions
 - **Sentiment**: VADER analysis on each post (-1 to +1 compound score)
-- **Fallback**: Auto-generates realistic mock data if APIs unavailable
+- **Fallback**: Auto generates realistic mock data if APIs unavailable
 
 ### 3️⃣ **Hype Analyzer** (`hype_analyzer.py`)
 Quantifies social media momentum:
