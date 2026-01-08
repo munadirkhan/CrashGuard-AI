@@ -391,5 +391,5 @@ See [deploy.md](Documentation/deploy.md) for detailed instructions.
 
 ---
 
-**Made with ❤️ by [Munadir Khan](https://github.com/munadirkhan)**  
+**Made by [Munadir Khan](https://github.com/munadirkhan)**  
 **Active Development 2026 | Demo Coming Soon™**
