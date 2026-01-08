@@ -1,6 +1,6 @@
 # 🚀 CrashGuard AI - Enterprise Market Surveillance Platform
 
-> **Professional grade pump-and-dump detector + bullish stock predictor**  
+> * pump-and-dump detector + bullish stock predictor**  
 > Real time anomaly detection, social sentiment analysis, and AI powered trading signals
 
 ![Status](https://img.shields.io/badge/Status-Active%20Development-yellow?style=flat-square)
